@@ -1,8 +1,7 @@
 'use client'
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Input } from "@/components/ui/input"
 import { Send } from 'lucide-react'
-import clsx from 'clsx'
 
 const Chat = () => {
     const [messages, setMessages] = useState<{ role: 'user' | 'assistant', content: string }[]>([])
